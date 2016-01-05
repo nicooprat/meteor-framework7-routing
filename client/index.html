@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8">
+  <title>Meteor & Framework7</title>
+
+  <link rel="stylesheet" href="/packages/nobutakaoshiro_framework7-ios-material/framework7/dist/css/framework7.ios.css">
+  <link rel="stylesheet" href="/packages/nobutakaoshiro_framework7-ios-material/framework7/dist/css/framework7.ios.colors.css">
+
+  <!-- <link rel="stylesheet" href="/packages/nobutakaoshiro_framework7-ios-material/framework7/dist/css/framework7.material.css"> -->
+  <!-- <link rel="stylesheet" href="/packages/nobutakaoshiro_framework7-ios-material/framework7/dist/css/framework7.material.colors.css"> -->
+</head>
+
+
+
+<template name="Layout">
+  <div class="statusbar-overlay"></div>
+  <div class="views">
+    <div class="view view-main">
+      
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="center">
+            Header
+          </div>
+        </div>
+      </div>
+
+      <div class="pages navbar-through toolbar-through">
+        {{>yield}}
+      </div>
+
+    </div>
+  </div>
+</template>
+
+
+
+
+<template name="Home">
+  <div data-page="home" class="page">
+    <div class="page-content">
+
+      <div class="content-block">
+        <h1>Home</h1>
+        <p>This is a simple example to integrate Framework7 into Meteor routing. Click the link below...</p>
+        <p><a href="{{pathFor route='list'}}" class="">List</a></p>
+      </div>
+
+    </div>
+  </div>
+</template>
+
+
+
+<template name="List">
+  <div data-page="home" class="page">
+    <div class="page-content">
+
+      <div class="content-block">
+        <h1>List</h1>
+        <p>Great, now try to swipe back the page to go back, like you would on iOS.</p>
+        <p><a href="{{pathFor route='home'}}" class="">Home</a></p>
+      </div>
+
+    </div>
+  </div>
+</template>
