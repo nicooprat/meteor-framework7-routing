@@ -1,3 +1,7 @@
+# Notes
+
+The best way to have Meteor & F7 together would now be to use https://github.com/Akryum/meteor-vue-component (with vue-router) + https://github.com/nolimits4web/Framework7-Vue. Not tested yet, but looks awesome :)
+
 # meteor-framework7-routing
 
 Demo : http://meteor-framework7-routing.meteor.com/
